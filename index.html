@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <div class="weather-card">
+        <div class="search">
+            <input type="search" list="cityname" placeholder="enter city name" id="seatcycrch" onclick="enter(this.value)" spellcheck="false">
+            <datalist id="cityname">
+                <option value="Surat"><span>Gujrat,IN</span></option>
+            </datalist>
+        </div>
+        <div class="weather" id="weather">
+            <img class="weather-icon"
+                src="https://static.vecteezy.com/system/resources/previews/024/825/182/non_2x/3d-weather-icon-day-with-rain-free-png.png"
+                alt="...">
+            <h1 class="temp">15°C </h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div style="display: flex;" class="col">
+                    <img class="humi"
+                        src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png">
+                    <div class="info">
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/512/136/136712.png">
+                    <div class="info">
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="asset/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="asset/js/main.js"></script>
+<script>
+    // var API = "97ed86b99fdcf738c7a080e0fa9fde20"
+    // // var city= 'Gujarat'
+    // function enter(city) {
+    //     $.ajax({
+    //         url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`,
+    //         method: 'GET',
+    //         success: function (res) {
+    //             console.log(res)
+    //             // alert('dcaui')
+    //         }
+    //     })
+    // }
+</script>
+
+</html>
